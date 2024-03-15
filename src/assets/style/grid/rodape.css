@@ -1,0 +1,86 @@
+.rodape{
+    display: grid;
+    grid-template-columns: auto 4fr 1fr 3fr 0.5fr 1fr 0.5fr 3fr 1fr 3fr 2fr 0.5fr;
+    grid-template-rows: 50% 50%;
+    column-gap: 0.5rem;
+    row-gap: 0.25rem;
+}
+
+.rodape__imagem{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.rodape__titulo{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.rodape__subtitulo{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+
+.rodape__botao{
+    grid-row: 1 / 2;
+}
+.rodape__botao--voltar{
+    grid-column: 4 / 5;
+    justify-self: right;
+}
+.rodape__botao--anterior{
+    grid-column: 5 / 6;
+
+}
+.rodape__botao--play{
+    grid-column: 6 / 7;
+}
+.rodape__botao--avancar{
+    grid-column: 7 / 8;
+}
+.rodape__botao--proximo{
+    grid-column: 8 / 9;
+    justify-self: left;
+}
+
+
+.rodape__horario--inicio, .barra__container--reproducao, .rodape__horario--termino, 
+.rodape__botao--volume-down, .barra__container--volume, .rodape__botao--volume-up{
+    grid-row: 2 / 3;
+}
+
+.rodape__horario--inicio{
+    grid-column: 3 / 4;
+    justify-self: right;
+    align-self: center;
+}
+
+.barra__container--reproducao{
+    grid-column: 4 / 9;
+    align-self: center;
+}
+
+.rodape__horario--termino{
+    grid-column: 9 / 10;
+    justify-self: left;
+    align-self: center;
+}
+
+.rodape__botao--volume-down{
+    grid-column: 10 / 11;
+    justify-self: right;
+    align-self: center;
+}
+
+
+.barra__container--volume{
+    grid-column: 11 / 12;
+    align-self: center;
+}
+
+.rodape__botao--volume-up{
+    grid-column: 12 / 13;
+    justify-self: left;
+    align-self: center;
+}
